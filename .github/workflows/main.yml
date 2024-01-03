@@ -9,7 +9,7 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
         with:
-          start: npm run cypress:open
+          start: npx cypress:open
         
       
       
