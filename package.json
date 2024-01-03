@@ -4,7 +4,9 @@
   "description": "cypress, api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open",
+    "cypress:run": "cypress run",
+    "runOnChrome": "cypress rin --browser chrome"
   },
   "keywords": [
     "cypress",
