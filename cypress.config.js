@@ -8,6 +8,7 @@ module.exports = defineConfig({
   // Viewport settings overridden for component tests
   // Command timeout overridden for E2E tests
   e2e: {
+    pageLoadTimeout: 30000,
     defaultCommandTimeout: 10000,
   },
 })
