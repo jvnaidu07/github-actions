@@ -4,7 +4,9 @@
   "description": "cypress, api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runAllfiles": "npx cypress run",
+    "runSingleFile":"npx cypress run --spec cypress/e2e/api.cy.js"
   },
   "keywords": [
     "cypress",
