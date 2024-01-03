@@ -1,0 +1,10 @@
+stages:
+  - test
+
+test:
+  image: cypress/browsers:node16.5.0-chrome94-ff93
+  stage: test
+  script:
+    - npm i
+    - npm run runOnChrome
+  
