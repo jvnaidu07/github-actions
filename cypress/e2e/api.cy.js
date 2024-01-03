@@ -22,13 +22,6 @@ describe("cypress api", ()=>{
         // cy.get("#primary-menu li a").eq(2).click({force:true})
         // cy.wait("@waitForPageLoad")
     })
-    it("", ()=>{
-        cy.visit("https://www.google.com/");
-        cy.get("#APjFqb").type(data.name)
-        cy.intercept("GET", "https://googleads.g.doubleclick.net/pagead/id").as('waitForPageLoad')
-        cy.get(".KxwPGc.AghGtd a:nth-of-type(1)").click({force:true})
-        cy.wait("@waitForPageLoad", {timeout:20000});
-    })
     it("url assertions", ()=>{
         cy.visit("https://www.google.com/");
         cy.url().should('include', 'google')
