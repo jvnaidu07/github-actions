@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
 
-    "runAllfiles": "npx cypress run",
-    "runSingleFile":"npx cypress run --spec cypress/e2e/api.cy.js",
     "test": "cypress open",
-    "cypress:run": "cypress run",
-    "runOnChrome": "cypress rin --browser chrome"
+    "cypress:run": "cypress run"
   },
   "keywords": [
     "cypress",
