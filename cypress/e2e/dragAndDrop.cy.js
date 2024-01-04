@@ -32,6 +32,15 @@ context("drag an drop", () => {
         mouseActions.angular().trigger('dragstart')
         mouseActions.dragged().trigger('drop')
     })
+
+    it("drag and drop each element ", () => {
+
+        cy.visit("https://demo.seleniumeasy.com/drag-and-drop-demo.html", { timeout: 120000 })
+        mouseActions.draggable().each(el => {
+            cy.wrap(el).trigger('dragstart', { dataTransfer });
+            mouseActions.dropZone().trigger('drop', { dataTransfer })
+        })
+
     it("drag and drop practices", () => {
         cy.visit(Cypress.env("dragAnddropWebsite"))
         mouseActions.angular().trigger('dragstart')
@@ -41,5 +50,6 @@ context("drag an drop", () => {
         cy.visit(Cypress.env("dragAnddropWebsite"))
         mouseActions.angular().trigger('dragstart')
         mouseActions.dragged().trigger('drop')
+
     })
 })
