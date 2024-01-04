@@ -32,4 +32,14 @@ context("drag an drop", () => {
         mouseActions.angular().trigger('dragstart')
         mouseActions.dragged().trigger('drop')
     })
+    it("drag and drop practices", () => {
+        cy.visit(Cypress.env("dragAnddropWebsite"))
+        mouseActions.angular().trigger('dragstart')
+        mouseActions.dragged().trigger('drop')
+    })
+    it("drag and drop practices", () => {
+        cy.visit(Cypress.env("dragAnddropWebsite"))
+        mouseActions.angular().trigger('dragstart')
+        mouseActions.dragged().trigger('drop')
+    })
 })
