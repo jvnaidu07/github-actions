@@ -40,6 +40,7 @@ context("drag an drop", () => {
             cy.wrap(el).trigger('dragstart', { dataTransfer });
             mouseActions.dropZone().trigger('drop', { dataTransfer })
         })
+    });
 
     it("drag and drop practices", () => {
         cy.visit(Cypress.env("dragAnddropWebsite"))
