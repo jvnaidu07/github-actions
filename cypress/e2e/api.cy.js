@@ -28,6 +28,7 @@ describe("cypress api", ()=>{
         cy.url().should('contain', 'google')
         cy.url().should('eq', 'https://www.google.com/')
 
-    })
+    });
+    
 })
 
