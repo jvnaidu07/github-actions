@@ -19,7 +19,8 @@ module.exports = defineConfig({
       dragAnddropWebsite: "https://demo.automationtesting.in/Static.html",
       loginPage: "https://demo.guru99.com/test/newtours/login.php",
       registerPage: "https://demo.guru99.com/test/newtours/register.php",
-      githubb: "https://github.com/"
+      githubb: "https://github.com/",
+      dragAndDrop: "https://demo.guru99.com/test/drag_drop.html"
     }
   },
 })
