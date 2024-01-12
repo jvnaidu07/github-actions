@@ -7,7 +7,5 @@ describe("drag and drop", ()=>{
         cy.get("#products div ul li").should('have.length', 8);
         cy.get("#products div ul li").eq(4).trigger('dragstart', {dataTransfer})
         cy.get(".ui-widget-content ol li").first().trigger('dragend', {dataTransfer})
-
-
     })
 })
