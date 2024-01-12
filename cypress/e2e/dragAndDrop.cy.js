@@ -51,5 +51,7 @@ context("drag an drop", () => {
         cy.visit(Cypress.env("dragAnddropWebsite"))
         mouseActions.angular().trigger('dragstart')
         mouseActions.dragged().trigger('drop')
+
     })
+
 })
