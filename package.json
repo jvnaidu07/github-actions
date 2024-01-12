@@ -4,9 +4,8 @@
   "description": "cypress, api",
   "main": "index.js",
   "scripts": {
-
     "runAllfiles": "npx cypress run",
-    "runSingleFile":"npx cypress run --spec cypress/e2e/api.cy.js",
+    "runSingleFile": "npx cypress run --spec cypress/e2e/api.cy.js",
     "test": "cypress open",
     "cypress:run": "cypress run",
     "runOnChrome": "cypress rin --browser chrome"
@@ -19,5 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.6.1"
+  },
+  "dependencies": {
+    "cypress-drag-drop": "^1.1.1"
   }
 }
