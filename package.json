@@ -7,7 +7,8 @@
     "runAllfiles": "npx cypress run",
     "runSingleFile": "npx cypress run --spec cypress/e2e/api.cy.js",
     "test": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "keywords": [
     "cypress",
