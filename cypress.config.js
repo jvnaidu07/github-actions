@@ -20,7 +20,8 @@ module.exports = defineConfig({
       loginPage: "https://demo.guru99.com/test/newtours/login.php",
       registerPage: "https://demo.guru99.com/test/newtours/register.php",
       githubb: "https://github.com/",
-      dragAndDrop: "https://demo.guru99.com/test/drag_drop.html"
+      dragAndDrop: "https://demo.guru99.com/test/drag_drop.html",
+      alertDemoWebsite: "https://vinothqaacademy.com/alertandpopup/"
     }
   },
 })
