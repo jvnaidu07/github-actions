@@ -4,11 +4,7 @@
   "description": "cypress, api",
   "main": "index.js",
   "scripts": {
-    "runAllfiles": "npx cypress run",
-    "runSingleFile": "npx cypress run --spec cypress/e2e/api.cy.js",
-    "test": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "cypress",
@@ -17,10 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.1",
-    "cypress-iframe": "^1.0.1"
-  },
-  "dependencies": {
-    "cypress-drag-drop": "^1.1.1"
+    "cypress": "^13.6.1"
   }
 }

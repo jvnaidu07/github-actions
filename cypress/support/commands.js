@@ -23,15 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-import 'cypress-iframe';
-// or
-require('cypress-iframe');
-
-
-Cypress.Commands.add('getIframe', ()=>{
-    cy.get("#singleframe", {timeout: 30000}).then($iframe =>{
-        const body = $iframe.contents().find('body')
-        cy.wrap(body).as('iframe')            
-    })
-})
