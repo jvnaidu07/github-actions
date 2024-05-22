@@ -28,7 +28,6 @@ describe("perform mouse hover actions", () => {
     it("registration form", () => {
         cy.visit("https://stqatools.com/demo/Register.php");
         cy.registrationPageDetails();
-                
-
+            
     })
 })
