@@ -1,5 +1,11 @@
 /// <reference types = "Cypress"/>
 
+import getLocator from "./locators";
+
+
+
+const registrationPage = new getLocator();
+
 describe("perform mouse hover actions", () => {
     it("", () => {
         cy.visit(Cypress.env("mouseHover"));
@@ -12,13 +18,13 @@ describe("perform mouse hover actions", () => {
 
     it("registration form", () => {
         cy.visit("https://stqatools.com/demo/Register.php");
-        cy.get("#registration-form input", {timeout: 60000}).first().type("name").should('have.value', "name")
-        cy.get("#registration-form input").eq(1).type("address").should('have.value', 'address')
-        cy.get("input[type='checkbox']").check();
-        cy.get("input[type='radio']").first().click({force:true})
-        cy.get("#registration-form input").last().type("1992-06-12").should('have.value', '1992-06-12')
-        cy.get("select[id='country']").select('India').should('have.value', 'India')
-        cy.get("select[id='city']").select('Delhi').should('have.value', 'Delhi')        
+        registrationPage.nameField().first().type("name").should('have.value', "name")
+        registrationPage.addressField().type("address").should('have.value', 'address')
+        registrationPage.checkcheckboxes().check();
+        registrationPage.radioButtonCheckgender().first().click({force:true})
+        registrationPage.dateOfBirthField().last().type("1992-06-12").should('have.value', '1992-06-12')
+        registrationPage.selectCountry().select('India').should('have.value', 'India')
+        registrationPage.selectCity().select('Delhi').should('have.value', 'Delhi')        
 
     })
 });
