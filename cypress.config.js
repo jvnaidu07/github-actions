@@ -21,7 +21,8 @@ module.exports = defineConfig({
       registerPage: "https://demo.guru99.com/test/newtours/register.php",
       githubb: "https://github.com/",
       dragAndDrop: "https://demo.guru99.com/test/drag_drop.html",
-      alertDemoWebsite: "https://vinothqaacademy.com/alertandpopup/"
+      alertDemoWebsite: "https://vinothqaacademy.com/alertandpopup/",
+      mouseHover: "https://stqatools.com/demo/MouseHover.php"
     }
   },
 })
