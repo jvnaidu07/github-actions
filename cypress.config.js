@@ -5,9 +5,9 @@ module.exports = defineConfig({
   defaultCommandTimeout: 5000,
   viewportWidth: 1000,
   viewportHeight: 600,
-  video: true,
-  videoCompression: 32,
-  videoUploadOnPasses: true,
+  // video: true,
+  // videoCompression: 32,
+  // videoUploadOnPasses: true,
   // Viewport settings overridden for component tests
   // Command timeout overridden for E2E tests
   e2e: {
