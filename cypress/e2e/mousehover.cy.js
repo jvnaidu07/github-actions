@@ -15,15 +15,19 @@ describe("perform mouse hover actions", () => {
             expect(t).to.contain("You click on Dropdown hover Option")
         })
     });
-
-    it("registration form", () => {
-        cy.visit("https://stqatools.com/demo/Register.php");
+    Cypress.Commands.add("registrationPagedetails", () =>{
         registrationPage.nameField().first().type("name").should('have.value', "name")
         registrationPage.addressField().type("address").should('have.value', 'address')
         registrationPage.checkcheckboxes().check();
         registrationPage.radioButtonCheckgender().first().click({force:true})
         registrationPage.dateOfBirthField().last().type("1992-06-12").should('have.value', '1992-06-12')
         registrationPage.selectCountry().select('India').should('have.value', 'India')
-        registrationPage.selectCity().select('Delhi').should('have.value', 'Delhi')        
+        registrationPage.selectCity().select('Delhi').should('have.value', 'Delhi');
+    })
+
+    it("registration form", () => {
+        cy.visit("https://stqatools.com/demo/Register.php");
+        cy.registrationPagedetails();
+               
     })
 });
