@@ -3,10 +3,10 @@
 import storeLocators from "../locators/selectors";
 
 const mouseActions = new storeLocators()
-context("drag an drop", () => {
+context("drag and drop", () => {
     const dataTransfer = new DataTransfer();
     it("drag and drop practice", () => {
-        cy.viewport(500, 500)
+        //cy.viewport(500, 500)
 
         cy.visit("https://demo.guru99.com/test/drag_drop.html", { timeout: 120000 })
         mouseActions.triggerMouseDown().trigger('mousedown').trigger('dragstart')
