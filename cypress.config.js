@@ -5,9 +5,9 @@ module.exports = defineConfig({
   defaultCommandTimeout: 5000,
   viewportWidth: 1000,
   viewportHeight: 600,
-  video: true,
-  videoCompression: 32,
-  videoUploadOnPasses: true,
+  // video: true,
+  // videoCompression: 32,
+  // videoUploadOnPasses: true,
   // Viewport settings overridden for component tests
   // Command timeout overridden for E2E tests
   e2e: {
@@ -24,7 +24,8 @@ module.exports = defineConfig({
       registerPage: "https://demo.guru99.com/test/newtours/register.php",
       githubb: "https://github.com/",
       dragAndDrop: "https://demo.guru99.com/test/drag_drop.html",
-      alertDemoWebsite: "https://vinothqaacademy.com/alertandpopup/"
+      alertDemoWebsite: "https://vinothqaacademy.com/alertandpopup/",
+      mouseHover: "https://stqatools.com/demo/MouseHover.php"
     }
   },
 })
