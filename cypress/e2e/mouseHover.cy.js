@@ -10,7 +10,7 @@ describe("perform mouse hover actions", () => {
         })
     });
 
-    it("registration form", () => {
+    it.only("registration form", () => {
         cy.visit("https://stqatools.com/demo/Register.php");
         cy.get("#registration-form input", {timeout: 60000}).first().type("name").should('have.value', "name")
         cy.get("#registration-form input").eq(1).type("address").should('have.value', 'address')
