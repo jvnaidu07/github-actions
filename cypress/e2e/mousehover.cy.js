@@ -1,16 +1,16 @@
 /// <reference types = "Cypress"/>
 
 describe("perform mouse hover actions", () => {
-    it("", () => {
+    it.only("", () => {
         cy.visit(Cypress.env("mouseHover"));
-        cy.contains("Mouse Hover DropDown").realHover();
+        cy.contains("Mouse Hover DropDown").realHover;
         cy.contains("Link 1").click({ force: true });
         cy.get(".modal-content").then(t => {
             expect(t).to.contain("You click on Dropdown hover Option")
         })
     });
 
-    it.only("registration form", () => {
+    it("registration form", () => {
         cy.visit("https://stqatools.com/demo/Register.php");
         cy.get("#registration-form input", {timeout: 60000}).first().type("name").should('have.value', "name")
         cy.get("#registration-form input").eq(1).type("address").should('have.value', 'address')
