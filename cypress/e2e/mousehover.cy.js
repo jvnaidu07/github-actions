@@ -25,5 +25,6 @@ describe("perform mouse hover actions", () => {
         registrationPage.dateOfBirthField().last().type("1992-06-12").should('have.value', '1992-06-12')
         registrationPage.selectCountry().select('India').should('have.value', 'India')
         registrationPage.selectCity().select('Delhi').should('have.value', 'Delhi')        
+
     })
 });
