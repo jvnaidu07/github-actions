@@ -1,7 +1,7 @@
 /// <reference types = "Cypress"/>
 
 describe("perform mouse hover actions", () => {
-    it.only("", () => {
+    it("", () => {
         cy.visit(Cypress.env("mouseHover"));
         cy.contains("Mouse Hover DropDown").realHover;
         cy.contains("Link 1").click({ force: true });
@@ -20,4 +20,4 @@ describe("perform mouse hover actions", () => {
         cy.get("select[id='country']").select('India').should('have.value', 'India')
         cy.get("select[id='city']").select('Delhi').should('have.value', 'Delhi')        
     })
-})
+});
