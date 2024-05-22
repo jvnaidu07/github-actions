@@ -19,5 +19,6 @@ describe("perform mouse hover actions", () => {
         cy.get("#registration-form input").last().type("1992-06-12").should('have.value', '1992-06-12')
         cy.get("select[id='country']").select('India').should('have.value', 'India')
         cy.get("select[id='city']").select('Delhi').should('have.value', 'Delhi')        
+
     })
 })
