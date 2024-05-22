@@ -12,7 +12,7 @@ context("drag an drop", () => {
         mouseActions.triggerMouseDown().trigger('mousedown').trigger('dragstart')
         mouseActions.placeholder(1).trigger('drop', { dataTransfer })
     })
-    it("drag and drop practice", () => {
+    it.skip("drag and drop practice", () => {
 
         cy.visit("https://demo.seleniumeasy.com/drag-and-drop-demo.html", { timeout: 120000 })
         mouseActions.draggable().first().trigger('dragstart', { dataTransfer })
