@@ -5,6 +5,7 @@ module.exports = defineConfig({
   defaultCommandTimeout: 5000,
   viewportWidth: 1000,
   viewportHeight: 600,
+  video: true,
   videoCompression: 32,
   videoUploadOnPasses: true,
   // Viewport settings overridden for component tests
