@@ -19,12 +19,8 @@ context("registration form details", () =>{
 
     })
 
-    it("registration form", () => {
-        
+    it("registration form", () => {        
         cy.visit("https://stqatools.com/demo/Register.php");
-        cy.registrationFormdetails()
-               
-    
+        cy.registrationFormdetails();              
     })
-
 })
