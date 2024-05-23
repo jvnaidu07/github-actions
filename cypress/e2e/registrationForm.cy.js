@@ -24,4 +24,3 @@ context("registration form details", () =>{
         cy.registrationFormdetails();              
     })
 })
-
