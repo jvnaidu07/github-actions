@@ -26,7 +26,8 @@ module.exports = defineConfig({
       githubb: "https://github.com/",
       dragAndDrop: "https://demo.guru99.com/test/drag_drop.html",
       alertDemoWebsite: "https://vinothqaacademy.com/alertandpopup/",
-      mouseHover: "https://stqatools.com/demo/MouseHover.php"
+      mouseHover: "https://stqatools.com/demo/MouseHover.php",
+      gridTable: "https://bryntum.com/products/grid/examples/facet-filter/"
     }
   },
 })
