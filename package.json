@@ -8,7 +8,8 @@
     "runSingleFile": "npx cypress run --spec cypress/e2e/api.cy.js",
     "test": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "gridTableSpec": "npx cypress run --spec cypress\\e2e\\gridtable.cy.js"
   },
   "keywords": [
     "cypress",
