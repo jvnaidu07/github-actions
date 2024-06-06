@@ -1,0 +1,27 @@
+module.exports.airlineGridTable = 
+[
+    { airlne: "Airline"},
+    //{ airlne: ""},       
+    //{ airlne: ""},      
+    //{ airlne: ""},      
+    { airlne: "SAS"},   
+    { airlne: "Lufthansa"},
+    { airlne: "SAS"},      
+    { airlne: "Norwegian"},
+    { airlne: "Air France"},
+    //{ airlne: ""},         
+    { airlne: "SAS"},      
+    { airlne: "Norwegian"},
+    { airlne: "Lufthansa"},
+    { airlne: "Lufthansa"},
+    { airlne: "Air France"},
+    //{ airlne: ""},         
+    //{ airlne: ""},   
+    //{ airlne: ""},         
+    { airlne: "SAS"},      
+    { airlne: "Norwegian"},
+    { airlne: "Lufthansa"},
+    { airlne: "SAS"},      
+    { airlne: "Lufthansa"},
+
+]
