@@ -34,5 +34,4 @@ describe("Validate grid table", () => {
 
     })
 
-
 })
