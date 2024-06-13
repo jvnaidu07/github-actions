@@ -18,9 +18,9 @@ describe("cypress api", ()=>{
     it.only("", ()=>{
         cy.visit("https://www.google.com/");
         cy.get("#APjFqb").type(data.name)
-        cy.intercept("GET", "https://www.youtube.com/s/player/dee49cfa/player_ias.vflset/en_US/base.js").as('waitForPageLoad')
+        cy.intercept("GET", "https://static.doubleclick.net/instream/ad_status.js").as('waitForPageLoad')
         cy.get("input[class='gNO89b']").eq(1).click({force:true})
-        cy.wait("@waitForPageLoad", {timeout: 60000})
+        cy.wait("@waitForPageLoad")
     })
     it("url assertions", ()=>{
         cy.visit("https://www.google.com/");

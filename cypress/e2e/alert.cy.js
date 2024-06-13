@@ -3,11 +3,11 @@
 
 
 // describe("alerts in cypress", () => {
-//     // beforeEach("", () => {
-//     //     cy.visit(Cypress.env("alertDemoWebsite"))
-//     // });
+//     beforeEach("", () => {
+//         cy.visit(Cypress.env("alertDemoWebsite"))
+//     });
 
-//     it.skip("alert box", () => {
+//     it.only("alert box", () => {
 //         cy.contains("Alert Box").click();
 //         cy.on("window:alert", (x) => {
 //             expect(x).to.contains("I am an alert box!");
