@@ -13,6 +13,7 @@ module.exports = defineConfig({
   // Command timeout overridden for E2E tests
   e2e: {
     defaultCommandTimeout: 10000,
+    
 
     env: {
       "viewportHeight": 1080,
