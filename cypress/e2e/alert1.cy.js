@@ -1,9 +1,9 @@
 /// <reference types = "cypress"/>
 
 describe("alert", () => {
-    it("Validate alert box", () => {
-        cy.viewport(1300, 700)
-        cy.visit("https://demoqa.com/alerts");
+    it.only("Validate alert box", () => {
+        //cy.viewport(1300, 700)
+        cy.visit("https://demoqa.com/alerts", {timeout: 180000});
         cy.get("#alertButton").click();
         cy.on("window:alert", (t) => {
             expect(t).to.contains("You clicked a button")
@@ -35,4 +35,3 @@ describe("alert", () => {
         cy.get("#promptResult").should('have.text', 'You entered Venkat')
     })
 })
-
